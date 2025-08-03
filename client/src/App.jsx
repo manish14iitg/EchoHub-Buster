@@ -17,7 +17,7 @@ function App() {
     setAnalysisResult(null);
 
     try {
-      const response = await fetch("https://echohub-buster.onrender.com//api/analyze-news", {
+      const response = await fetch("https://echohub-buster.onrender.com/api/analyze-news", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
