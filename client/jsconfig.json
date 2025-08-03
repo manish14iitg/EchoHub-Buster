@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".", // This is crucial for path aliases to work
+    "paths": {
+      "@/*": ["./src/*"] // This maps your "@" alias to the src directory
+    },
+    "jsx": "react-jsx", // Often useful for React projects
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "bundler", // Or "node", depending on your Vite setup
+    "allowJs": true,
+    "checkJs": true, // Optional: enables type checking for JS files
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": ["src", ".eslintrc.cjs", "vite.config.js"] // Specify what files/folders to include
+}
